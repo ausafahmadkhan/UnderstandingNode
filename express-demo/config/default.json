@@ -1,0 +1,7 @@
+{
+    "name" : "My Express Application",
+    "mail" :
+    {
+        "host" : "default-server"
+    }
+}
