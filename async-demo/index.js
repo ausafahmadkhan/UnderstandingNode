@@ -30,7 +30,7 @@ async function displayRepos()
         console.log(error.message)
     }
 }
-async function getUser(id)
+function getUser(id)
 {  
     return new Promise((resolve, reject) =>
     {
@@ -43,14 +43,14 @@ async function getUser(id)
     })
 }
 
-async function getRepository(userName)
+function getRepository(userName)
 {
     return new Promise((resolve, reject) =>
     {
         setTimeout(() =>
         {
             console.log("Getting the repo details");
-            //resolve({userName : userName, repos : ["repo1", "repo2", "repo3"]})
+            resolve({userName : userName, repos : ["repo1", "repo2", "repo3"]})
             reject(new Error("something went wrong fetching repo details"))
         }, 2000)
     })
